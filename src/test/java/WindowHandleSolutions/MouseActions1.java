@@ -37,6 +37,7 @@ public class MouseActions1 {
     @Test
     public void test01() {
 
+        System.out.println("son ekleme de bu olsun");
         //bunları murat ekledi.
         driver.switchTo().newWindow(WindowType.WINDOW);
         driver.get("https://www.walmart.com");
