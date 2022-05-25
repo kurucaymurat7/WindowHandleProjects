@@ -66,6 +66,6 @@ public class MouseActions1 {
         String expectedTitle = "Elemental Selenium";
         String actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
-        System.out.println("Murat burada çalıştı");
+        System.out.println("master burada çalışmaya devam etti. ");
     }
 }
