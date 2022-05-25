@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
@@ -35,6 +36,12 @@ public class MouseActions1 {
     }
     @Test
     public void test01() {
+
+        //bunları murat ekledi.
+        driver.switchTo().newWindow(WindowType.WINDOW);
+        driver.get("https://www.walmart.com");
+        //● Sayfa title’nin “Walmart” icerdigini test edin
+
         //2- https://the-internet.herokuapp.com/context_menu sitesine gidelim
         driver.get("https://the-internet.herokuapp.com/context_menu");
         //3- Cizili alan uzerinde sag click yapalim
@@ -66,6 +73,10 @@ public class MouseActions1 {
         String expectedTitle = "Elemental Selenium";
         String actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
+
+        //bunları da murat ekledi.
+        String actualText2 = driver.findElement(By.xpath("//h3")).getText();
+
         System.out.println("master burada çalışmaya devam etti. ");
     }
 }
