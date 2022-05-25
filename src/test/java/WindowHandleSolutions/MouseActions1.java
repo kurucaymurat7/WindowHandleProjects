@@ -67,6 +67,5 @@ public class MouseActions1 {
         String actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
         System.out.println("master burada çalışmaya devam etti. ");
-
     }
 }
