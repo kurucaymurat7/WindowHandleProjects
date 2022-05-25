@@ -42,6 +42,10 @@ public class MouseActions1 {
         driver.get("https://www.walmart.com");
         //● Sayfa title’nin “Walmart” icerdigini test edin
 
+        //bunlar en son eklenen kodlar:
+        driver.switchTo().newWindow(WindowType.WINDOW);
+        driver.get("https://www.facebook.com");
+
         //2- https://the-internet.herokuapp.com/context_menu sitesine gidelim
         driver.get("https://the-internet.herokuapp.com/context_menu");
         //3- Cizili alan uzerinde sag click yapalim
