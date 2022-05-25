@@ -73,10 +73,5 @@ public class MouseActions1 {
         String expectedTitle = "Elemental Selenium";
         String actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
-
-        //bunları da murat ekledi.
-        String actualText2 = driver.findElement(By.xpath("//h3")).getText();
-
-        System.out.println("master burada çalışmaya devam etti. ");
     }
 }
