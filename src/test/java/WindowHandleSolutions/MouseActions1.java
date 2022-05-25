@@ -62,6 +62,8 @@ public class MouseActions1 {
         driver.findElement(By.xpath("//*[text()='Elemental Selenium']")).click();
         //7- Acilan sayfada h1 taginda “Elemental Selenium” yazdigini test edelim
         Set<String> windowHandleseti = driver.getWindowHandles();
+        System.out.println("bunu da ahmet ekledi");
+        System.out.println("bu satırı da sildi");
         String ikinciSayfaWindowHandleDegeri = "";
         for (String each : windowHandleseti
         ) {
@@ -69,6 +71,7 @@ public class MouseActions1 {
                 ikinciSayfaWindowHandleDegeri = each;
             }
         }
+        System.out.println("bu satırı da sildi");
         driver.switchTo().window(ikinciSayfaWindowHandleDegeri);
         WebElement acilanSayfaTag = driver.findElement(By.xpath("//h1"));
         String expectedTitle = "Elemental Selenium";
