@@ -65,6 +65,7 @@ public class MouseActions1 {
         driver.switchTo().window(ikinciSayfaWindowHandleDegeri);
         WebElement acilanSayfaTag = driver.findElement(By.xpath("//h1"));
         String expectedTitle = "Elemental Selenium";
+        System.out.println("en son ekleme");
         String actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
     }
