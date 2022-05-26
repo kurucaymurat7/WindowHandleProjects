@@ -71,6 +71,10 @@ public class MouseActions1 {
                 ikinciSayfaWindowHandleDegeri = each;
             }
         }
+
+        System.out.println("ahmet ekledi");
+        driver.get("https://www.google.com");
+
         System.out.println("bu satırı da sildi");
         driver.switchTo().window(ikinciSayfaWindowHandleDegeri);
         WebElement acilanSayfaTag = driver.findElement(By.xpath("//h1"));
