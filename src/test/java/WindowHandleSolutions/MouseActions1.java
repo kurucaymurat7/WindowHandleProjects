@@ -36,16 +36,6 @@ public class MouseActions1 {
     }
     @Test
     public void test01() {
-
-        //bunları murat ekledi.
-        driver.switchTo().newWindow(WindowType.WINDOW);
-        driver.get("https://www.walmart.com");
-        //● Sayfa title’nin “Walmart” icerdigini test edin
-
-        //bunlar en son eklenen kodlar:
-        driver.switchTo().newWindow(WindowType.WINDOW);
-        driver.get("https://www.facebook.com");
-
         //2- https://the-internet.herokuapp.com/context_menu sitesine gidelim
         driver.get("https://the-internet.herokuapp.com/context_menu");
         //3- Cizili alan uzerinde sag click yapalim
@@ -79,12 +69,8 @@ public class MouseActions1 {
         driver.switchTo().window(ikinciSayfaWindowHandleDegeri);
         WebElement acilanSayfaTag = driver.findElement(By.xpath("//h1"));
         String expectedTitle = "Elemental Selenium";
+        System.out.println("en son ekleme");
         String actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
-
-        //bunları da murat ekledi.
-        String actualText2 = driver.findElement(By.xpath("//h3")).getText();
-
-        System.out.println("master burada çalışmaya devam etti. ");
     }
 }
