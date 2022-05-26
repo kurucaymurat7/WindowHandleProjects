@@ -112,19 +112,6 @@ public class MouseActions1 extends WindowHandle_C02{
         driver.switchTo().window(ikinciSayfaWindowHandleDegeri);
         WebElement acilanSayfaTag = driver.findElement(By.xpath("//h1"));
 
-        System.out.println("ahmet ilk satir");
-
-        actualTitle = driver.getTitle();
-        Assert.assertTrue(actualTitle.contains(expectedTitle));
-        //● Ilk acilan sayfaya donun ve amazon sayfasina dondugunuzu test edin
-        driver.switchTo().window(amazonWindowHandleDegeri);
-        //● Sayfa title’nin “Amazon” icerdigini test edin
-        expectedTitle = "Amazon";
-        actualTitle = driver.getTitle();
-        Assert.assertTrue(actualTitle.contains(expectedTitle));
-
-        expectedTitle = "Elemental Selenium";
-        actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
 
 
