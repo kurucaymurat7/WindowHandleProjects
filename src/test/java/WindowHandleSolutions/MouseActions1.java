@@ -49,6 +49,10 @@ public class MouseActions1 extends WindowHandle_C02{
         String actualText = driver.switchTo().alert().getText();
         Assert.assertEquals(expectedText, actualText);
 
+        System.out.println("murat satırları");
+        driver.get("https://www.google.com");
+        System.out.println("burada da bitti");
+
         //5- Tamam diyerek alert’i kapatalim
         driver.switchTo().alert().accept();
         //6- Elemental Selenium linkine tiklayalim
@@ -114,7 +118,6 @@ public class MouseActions1 extends WindowHandle_C02{
 
         Assert.assertTrue(actualTitle.contains(expectedTitle));
 
-
         actualTitle = driver.getTitle();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
         //● Ilk acilan sayfaya donun ve amazon sayfasina dondugunuzu test edin
@@ -122,8 +125,6 @@ public class MouseActions1 extends WindowHandle_C02{
         //● Sayfa title’nin “Amazon” icerdigini test edin
         expectedTitle = "Amazon";
         actualTitle = driver.getTitle();
-        Assert.assertTrue(actualTitle.contains(expectedTitle));
-
-        System.out.println("ahmet ekledi");
+        Assert.assertTrue(actualTitle.contains(expectedTitle);
     }
 }
