@@ -72,8 +72,13 @@ public class MouseActions1 {
         System.out.println("bu satırı da sildi");
         driver.switchTo().window(ikinciSayfaWindowHandleDegeri);
         WebElement acilanSayfaTag = driver.findElement(By.xpath("//h1"));
+
+        System.out.println("ahmet ilk satir");
+
         String expectedTitle = "Elemental Selenium";
         String actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
+
+        System.out.println("ahmet ekledi");
     }
 }
