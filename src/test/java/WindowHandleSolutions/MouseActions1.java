@@ -72,5 +72,8 @@ public class MouseActions1 {
         System.out.println("en son ekleme");
         String actualTitle = acilanSayfaTag.getText();
         Assert.assertTrue(actualTitle.contains(expectedTitle));
+
+        System.out.println("murat commit");
+        System.out.println("son satır");
     }
 }
