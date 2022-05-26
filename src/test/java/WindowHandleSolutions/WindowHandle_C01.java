@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class WindowHandle_C01 {
+public class WindowHandle_C03 {
     //Yeni bir class olusturun: WindowHandle
     //● Amazon anasayfa adresine gidin.
     //● Sayfa’nin window handle degerini String bir degiskene atayin
