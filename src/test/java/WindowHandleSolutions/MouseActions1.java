@@ -58,6 +58,10 @@ public class MouseActions1 {
         String actualText = driver.switchTo().alert().getText();
         Assert.assertEquals(expectedText, actualText);
 
+        System.out.println("murat satırları");
+        driver.get("https://www.google.com");
+        System.out.println("burada da bitti");
+
         //5- Tamam diyerek alert’i kapatalim
         driver.switchTo().alert().accept();
         //6- Elemental Selenium linkine tiklayalim
